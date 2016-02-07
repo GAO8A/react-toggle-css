@@ -1,0 +1,28 @@
+.toggle, .toggleon {
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  cursor: pointer;
+  display: inline-block; }
+  .toggle[disabled], [disabled].toggleon {
+    opacity: 0.7;
+    cursor: default;
+    background: #777677; }
+
+.handle, .toggleon .handle {
+  border: 1px solid #999;
+  box-shadow: 1px 1px 1px #ccc;
+  width: 25px;
+  height: 24px;
+  left: 0;
+  border-radius: 12px;
+  background: white;
+  position: relative;
+  transition: left .2s ease-in-out; }
+
+.toggleon {
+  background: #00a6a0; }
+
+.toggleon .handle {
+  left: 23px; }
